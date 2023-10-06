@@ -117,13 +117,13 @@ class GeneratorPage extends StatelessWidget {
                   appState.toggleFavorite();
                 },
                 icon: Icon(icon),
-                label: Text("Like")),
+                label: Text("Like ")),
             SizedBox(width: 10),
             ElevatedButton(
                 onPressed: () {
                   appState.getNext();
                 },
-                child: Text("NEXT")),
+                child: Text("NEXT...")),
           ],
         )
       ]),
@@ -144,7 +144,7 @@ class BigCard extends StatelessWidget {
     return Card(
       color: thema.colorScheme.primary,
       child: Padding(
-          padding: const EdgeInsets.all(20),
+          padding: const EdgeInsets.all(25),
           child: Text(
             pair.asLowerCase,
             style: style,
